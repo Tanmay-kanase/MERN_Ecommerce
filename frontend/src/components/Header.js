@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Logo from "./Logo";
 import { ImSearch } from "react-icons/im";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const header = () => {
-  const [menuDisplay, setMenuDisplay] = useState("false");
-};
+
 
 const Header = () => {
   return (
@@ -34,11 +32,11 @@ const Header = () => {
           <div className="relative flex justify-center  ">
             <div
               className="text-2xl cursor-pointer relative flex justify-center "
-              onClick={() => setMenuDisplay((preve) => !preve)}
+              // onClick={() => setMenuDisplay((preve) => !preve)}
             >
               <FaRegCircleUser />
             </div>
-            {menuDisplay && (
+            {/* {menuDisplay && ( */}
               <div className=" absolute bg-white top-11 h-fit p-2 rounded  bottom-0 hidden hover:">
                 <nav>
                   <Link
@@ -49,7 +47,7 @@ const Header = () => {
                   </Link>
                 </nav>
               </div>
-            )}
+            
           </div>
 
           <div className="  text-2xl relative ">
